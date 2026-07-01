@@ -1,45 +1,49 @@
 # 🚀 SRE Engineering Handbook
 
-> A practical knowledge base covering Site Reliability Engineering, Platform Engineering, Cloud, Automation and Observability.
+A practical handbook for **Site Reliability Engineering**, **Platform Engineering**, **Cloud**, **Automation** and **Observability**.
 
-Repository: **sre-engineering-handbook**
+This project is being built as a public knowledge base focused on real-world SRE practices, troubleshooting, runbooks and production-oriented engineering content.
 
 ---
 
 ## Purpose
 
-This project was created to organize practical knowledge about modern Site Reliability Engineering.
+The goal of this handbook is not only to document commands or tools.
 
-The goal is not only to document commands, but to explain how an SRE thinks, investigates problems, designs reliable platforms and improves operational excellence.
+The goal is to explain how an SRE thinks during incidents, how to investigate production issues, how to design reliable platforms and how to improve operational excellence.
+
+---
+
+## Current Focus
+
+The first module under development is:
+
+### ✅ Linux for SRE
+
+Available content:
+
+- Linux fundamentals for SRE
+- Server health check lab
+- Linux command reference structure
+- Linux cheatsheet
+- Production investigation mindset
 
 ---
 
 ## Learning Journey
 
-- [ ] Foundations
-- [ ] Linux for SRE
-- [ ] Networking
-- [ ] Docker
-- [ ] Kubernetes
-- [ ] Cloud
-  - [ ] Azure
-  - [ ] AWS
-  - [ ] Google Cloud Platform
-- [ ] Terraform
-- [ ] Ansible
+- [x] Repository foundation
+- [x] Documentation architecture
+- [x] Linux module foundation
+- [ ] Linux Health Check Lab
+- [ ] Linux Troubleshooting Guide
+- [ ] High CPU Runbook
+- [ ] Networking for SRE
+- [ ] Docker for SRE
+- [ ] Kubernetes for SRE
 - [ ] Observability
-  - [ ] Dynatrace
-  - [ ] Datadog
-  - [ ] OpenTelemetry
-  - [ ] Prometheus
-  - [ ] Grafana
-- [ ] API Management
 - [ ] Incident Management
 - [ ] Runbooks
-- [ ] Platform Engineering
-- [ ] Architecture
-- [ ] Interview Preparation
-- [ ] Career Development
 
 ---
 
@@ -47,37 +51,27 @@ The goal is not only to document commands, but to explain how an SRE thinks, inv
 
 ```text
 sre-engineering-handbook/
-├── foundations/
 ├── linux/
 │   ├── concepts/
-│   ├── commands/
+│   ├── reference/
 │   ├── labs/
+│   ├── troubleshooting/
 │   ├── real-world/
-│   ├── cheatsheets/
-│   ├── diagrams/
-│   └── images/
+│   ├── best-practices/
+│   ├── common-mistakes/
+│   └── cheatsheets/
 ├── networking/
 ├── docker/
 ├── kubernetes/
 ├── cloud/
-│   ├── aws/
-│   ├── azure/
-│   └── gcp/
+├── observability/
 ├── terraform/
 ├── ansible/
-├── observability/
-│   ├── datadog/
-│   ├── dynatrace/
-│   ├── grafana/
-│   ├── opentelemetry/
-│   └── prometheus/
 ├── api-management/
 ├── incident-management/
 ├── runbooks/
 ├── platform-engineering/
-├── architecture/
-├── interview/
-└── career/
+└── architecture/
 ```
 
 🚧 Under development
