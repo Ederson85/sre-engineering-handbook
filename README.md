@@ -2,7 +2,7 @@
 
 > A practical knowledge base covering Site Reliability Engineering, Platform Engineering, Cloud, Automation and Observability.
 
-Repository: **sre-labs**
+Repository: **sre-engineering-handbook**
 
 ---
 
@@ -16,6 +16,7 @@ The goal is not only to document commands, but to explain how an SRE thinks, inv
 
 ## Learning Journey
 
+- [ ] Foundations
 - [ ] Linux for SRE
 - [ ] Networking
 - [ ] Docker
@@ -35,29 +36,51 @@ The goal is not only to document commands, but to explain how an SRE thinks, inv
 - [ ] API Management
 - [ ] Incident Management
 - [ ] Runbooks
+- [ ] Platform Engineering
+- [ ] Architecture
+- [ ] Interview Preparation
+- [ ] Career Development
 
 ---
 
 ## Repository Structure
 
 ```text
-sre-labs/
-├── ansible/
-├── api-management/
+sre-engineering-handbook/
+├── foundations/
+├── linux/
+│   ├── concepts/
+│   ├── commands/
+│   ├── labs/
+│   ├── real-world/
+│   ├── cheatsheets/
+│   ├── diagrams/
+│   └── images/
+├── networking/
+├── docker/
+├── kubernetes/
 ├── cloud/
 │   ├── aws/
 │   ├── azure/
 │   └── gcp/
-├── docker/
-├── incident-management/
-├── kubernetes/
-├── linux/
-├── networking/
+├── terraform/
+├── ansible/
 ├── observability/
 │   ├── datadog/
 │   ├── dynatrace/
 │   ├── grafana/
 │   ├── opentelemetry/
 │   └── prometheus/
+├── api-management/
+├── incident-management/
 ├── runbooks/
-└── terraform/
+├── platform-engineering/
+├── architecture/
+├── interview/
+└── career/
+
+🚧 Under development
+
+Created and maintained by Ederson do Nascimento.
+GitHub: https://github.com/Ederson85
+LinkedIn: https://www.linkedin.com/in/edersondonascimento/

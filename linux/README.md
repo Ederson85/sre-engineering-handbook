@@ -6,30 +6,17 @@ This module focuses on practical Linux knowledge used in real production environ
 
 ---
 
-## Learning Objectives
-
-By the end of this module, the goal is to understand how to:
-
-- Navigate and inspect Linux systems
-- Analyze CPU, memory, disk and network behavior
-- Investigate processes and services
-- Read and interpret logs
-- Troubleshoot common production issues
-- Apply Linux knowledge in SRE scenarios
-
----
-
 ## Contents
 
-- [01 - Linux for SRE](01-linux-for-sre.md)
-- [02 - Filesystem](02-filesystem.md)
-- [03 - Processes](03-processes.md)
-- [04 - Networking](04-networking.md)
-- [05 - Logs](05-logs.md)
-- [06 - Systemd](06-systemd.md)
-- [07 - Troubleshooting](07-troubleshooting.md)
-- [Commands](commands.md)
-- [Cheatsheet](cheatsheet.md)
+- [01 - Linux for SRE](concepts/01-linux-for-sre.md)
+- [02 - Filesystem](concepts/02-filesystem.md)
+- [03 - Processes](concepts/03-processes.md)
+- [04 - Networking](concepts/04-networking.md)
+- [05 - Logs](concepts/05-logs.md)
+- [06 - Systemd](concepts/06-systemd.md)
+- [07 - Troubleshooting](concepts/07-troubleshooting.md)
+- [Commands](commands/README.md)
+- [Cheatsheet](cheatsheets/README.md)
 
 ---
 
@@ -42,3 +29,17 @@ By the end of this module, the goal is to understand how to:
 ## Status
 
 🚧 Under development
+
+---
+
+## Structure
+
+```text
+linux/
+├── concepts/
+├── commands/
+├── labs/
+├── real-world/
+├── cheatsheets/
+├── diagrams/
+└── images/

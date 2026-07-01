@@ -9,13 +9,15 @@ This roadmap defines the planned evolution of the SRE Engineering Handbook.
 - [x] Create repository structure
 - [x] Add project foundation files
 - [x] Define repository identity
-- [ ] Improve main README
-- [ ] Define contribution standards
+- [x] Rename project to SRE Engineering Handbook
+- [x] Organize handbook structure
+- [ ] Define module templates
 
 ---
 
 ## Phase 2 — Core SRE Foundations
 
+- [ ] Foundations
 - [ ] Linux for SRE
 - [ ] Networking for SRE
 - [ ] Docker fundamentals
@@ -64,3 +66,6 @@ This roadmap defines the planned evolution of the SRE Engineering Handbook.
 - [ ] Error Budgets
 - [ ] Reliability patterns
 - [ ] Platform Engineering practices
+- [ ] Architecture decision records
+- [ ] Interview preparation
+- [ ] Career development
