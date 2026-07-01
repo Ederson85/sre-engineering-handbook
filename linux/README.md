@@ -4,6 +4,22 @@ Linux is one of the core foundations for Site Reliability Engineering.
 
 This module focuses on practical Linux knowledge used in real production environments, including system analysis, troubleshooting, processes, logs, networking and service management.
 
+
+---
+
+## Structure
+
+```text
+linux/
+├── concepts/
+├── commands/
+├── labs/
+├── real-world/
+├── cheatsheets/
+├── diagrams/
+└── images/
+```
+
 ---
 
 ## Contents
@@ -29,17 +45,3 @@ This module focuses on practical Linux knowledge used in real production environ
 ## Status
 
 🚧 Under development
-
----
-
-## Structure
-
-```text
-linux/
-├── concepts/
-├── commands/
-├── labs/
-├── real-world/
-├── cheatsheets/
-├── diagrams/
-└── images/
