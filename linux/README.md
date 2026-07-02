@@ -12,7 +12,7 @@ This module focuses on practical Linux knowledge used in real production environ
 ```text
 linux/
 ├── concepts/
-├── commands/
+├── reference/
 ├── labs/
 ├── real-world/
 ├── cheatsheets/
@@ -31,7 +31,7 @@ linux/
 - [05 - Logs](concepts/05-logs.md)
 - [06 - Systemd](concepts/06-systemd.md)
 - [07 - Troubleshooting](concepts/07-troubleshooting.md)
-- [Commands](commands/README.md)
+- [Reference](reference/README.md)
 - [Cheatsheet](cheatsheets/README.md)
 
 ---
