@@ -34,18 +34,25 @@ uname -a
 ```bash
 uptime
 ```
+Observe
+- Load Average
 
 ### 3. Check memory
 ```bash
 free -m
 vmstat 1 5
 ```
+Expected
+- Available memory should not be critically low.
+- Swap usage should normally remain close to zero.
 
 ### 4. Check filesystem usage
 ```bash
 df -h
 lsblk
 ```
+Expected
+- Production filesystems should generally remain below 80% utilization.
 
 ### 5. Check top processes
 ```bash
@@ -53,6 +60,9 @@ top
 ps aux --sort=-%cpu | head
 ps aux --sort=-%mem | head
 ```
+Observe
+- A consistently high load average may indicate CPU contention.
+- Use `top` or `ps` to determine whether the bottleneck is CPU, memory or running processes.
 
 ### 6. Check network basics
 ```bash
