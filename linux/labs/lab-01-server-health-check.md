@@ -1,39 +1,72 @@
 # Lab 01 - Server Health Check
 
+**Module:** Linux  
+**Category:** Lab  
+**Level:** Beginner  
+**Estimated Time:** 15 minutes
+
+---
+
 ## Objective
 
-Practice a basic Linux server health check using commands commonly used by SREs during incident investigation.
+Perform a basic Linux server health check using commands commonly used by SREs during incident investigation.
 
 ---
 
 ## Scenario
 
-A production server is reported as slow.
+A monitoring alert reports that a Linux server is responding slowly.
 
-Your goal is to collect basic system information before taking any corrective action.
+Before restarting services or escalating the incident, your goal is to collect evidence about the current state of the server.
 
 ---
 
-## Commands
+## Tasks
 
-### System identity
+### 1. Identify the server
 ```bash
 hostname
 whoami
-pwd
+uname -a
+```
+
+### 2. Check uptime and load
+```bash
 uptime
-df -HT
+```
+
+### 3. Check memory
+```bash
 free -m
+vmstat 1 5
+```
+
+### 4. Check filesystem usage
+```bash
+df -h
+lsblk
+```
+
+### 5. Check top processes
+```bash
 top
 ps aux --sort=-%cpu | head
 ps aux --sort=-%mem | head
+```
+
+### 6. Check network basics
+```bash
 ip addr
 ip route
+```
 
+## Expected Result
+At the end of this lab, you should be able to answer:
+- Is the server overloaded?
+- Is memory under pressure?
+- Is any filesystem close to full?
+- Are there abnormal processes consuming CPU or memory?
+- Is the network interface available?
 
-## Questions
-Is the server overloaded?
-Is memory usage high?
-Is disk usage critical?
-Are there processes consuming too much CPU?
-Is the network interface available?
+## Lessons Learned
+A server health check helps SREs avoid assumptions and collect evidence before taking action during an incident.
