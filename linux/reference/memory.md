@@ -61,4 +61,4 @@ top
 
 # Next Step
 
-Continue with **Filesystem Commands**.
+Continue with [Filesystem Commands](filesystem.md).

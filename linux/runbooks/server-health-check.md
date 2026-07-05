@@ -95,8 +95,8 @@ Identify memory pressure, swap usage or abnormal memory consumers.
 ### Step 5 — Check filesystem
 
 ```bash
-df -h
-du -sh /*
+df -hT
+du -xhd1 / 2>/dev/null | sort -h
 ```
 
 Identify filesystems above safe utilization thresholds.
@@ -107,8 +107,8 @@ Identify filesystems above safe utilization thresholds.
 
 ```bash
 systemctl --failed
-journalctl -xe
-dmesg
+journalctl -p warning -n 100 --no-pager
+dmesg -T | tail -n 100
 ```
 
 Identify failing services or system-level errors.
@@ -232,7 +232,7 @@ df -h
 #### 2. Identify large directories
 
 ```bash
-du -sh /* 2>/dev/null | sort -h
+du -xhd1 / 2>/dev/null | sort -h
 ```
 
 #### 3. Investigate logs
@@ -243,14 +243,20 @@ du -sh /var/log/* 2>/dev/null | sort -h
 
 #### 4. Clean only safe files
 
-Examples:
+Preview files before deleting anything:
+
+```bash
+find /tmp -xdev -type f -mtime +7 -print
+```
+
+Examples of controlled cleanup:
 
 ```bash
 journalctl --vacuum-time=7d
 ```
 
 ```bash
-find /tmp -type f -mtime +7 -delete
+find /tmp -xdev -type f -mtime +7 -delete
 ```
 
 Do not delete application files without validation.

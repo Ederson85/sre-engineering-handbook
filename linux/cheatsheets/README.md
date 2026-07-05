@@ -45,8 +45,8 @@ ps aux --sort=-%cpu | head
 ## Filesystem
 
 ```bash
-df -h
-du -sh *
+df -hT
+du -xhd1 . 2>/dev/null | sort -h
 lsblk
 ```
 
@@ -57,7 +57,7 @@ lsblk
 ```bash
 ip addr
 ip route
-ss -tulnp
+ss -tuln
 ping <host>
 curl http://<host>
 ```
@@ -67,8 +67,8 @@ curl http://<host>
 ## Logs
 
 ```bash
-journalctl -xe
-dmesg
+journalctl -p warning -n 100 --no-pager
+dmesg -T | tail -n 100
 tail -f /var/log/syslog
 ```
 

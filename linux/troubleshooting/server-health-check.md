@@ -6,7 +6,7 @@
 
 ---
 
-# Problem
+## Problem
 
 A Linux server is reported as slow or unresponsive.
 
@@ -14,13 +14,14 @@ Before restarting services or escalating the incident, perform a structured heal
 
 ---
 
-# Investigation Steps
+## Investigation Steps
 
 ## Step 1 — Confirm the Server
 
 ```bash
 hostname
 whoami
+pwd
 ```
 
 Verify that you are connected to the correct server.
@@ -73,8 +74,8 @@ Look for:
 ## Step 5 — Check Filesystem
 
 ```bash
-df -h
-du -sh /*
+df -hT
+du -xhd1 / 2>/dev/null | sort -h
 ```
 
 Look for:
@@ -89,7 +90,7 @@ Look for:
 ```bash
 ip addr
 ip route
-ss -tulnp
+ss -tuln
 ```
 
 Verify:
@@ -103,8 +104,8 @@ Verify:
 ## Step 7 — Check Logs
 
 ```bash
-journalctl -xe
-dmesg
+journalctl -p warning -n 100 --no-pager
+dmesg -T | tail -n 100
 ```
 
 Look for:
@@ -115,17 +116,18 @@ Look for:
 
 ---
 
-# Decision
+## Decision
 
-If the operating system is healthy, continue investigating the application.
+If the operating system is healthy, continue investigating the application, dependency, database or network path.
 
 If infrastructure problems are found, resolve them before troubleshooting the application.
 
 ---
 
-# Related Documents
+## Related Documents
 
-- Server Health Check Concept
-- Linux Reference
-- Lab 01 - Server Health Check
-- Linux Cheatsheet
+- [Server Health Check Concept](../concepts/server-health.md)
+- [Linux Reference](../reference/README.md)
+- [Lab 01 - Server Health Check](../labs/lab-01-server-health-check.md)
+- [Server Health Check Runbook](../runbooks/server-health-check.md)
+- [Linux SRE Cheatsheet](../cheatsheets/README.md)

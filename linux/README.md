@@ -14,7 +14,10 @@ linux/
 ├── concepts/
 ├── reference/
 ├── labs/
+├── troubleshooting/
 ├── real-world/
+├── best-practices/
+├── common-mistakes/
 ├── cheatsheets/
 ├── diagrams/
 ├── images/
@@ -32,8 +35,10 @@ linux/
 - [05 - Logs](concepts/05-logs.md)
 - [06 - Systemd](concepts/06-systemd.md)
 - [07 - Troubleshooting](concepts/07-troubleshooting.md)
+- [Server Health Check Concept](concepts/server-health.md)
 - [Reference](reference/README.md)
 - [Cheatsheet](cheatsheets/README.md)
+- [Server Health Check Troubleshooting](troubleshooting/server-health-check.md)
 - [Server Health Check Runbook](runbooks/server-health-check.md)
 
 ---
@@ -46,4 +51,10 @@ linux/
 
 ## Status
 
-🚧 Under development
+The Linux foundation sprint is usable for review and practice.
+
+Next improvements:
+
+- Add advanced runbooks for high CPU, memory pressure and filesystem exhaustion.
+- Expand references with process, network, log and systemd commands.
+- Add safer lab environments using containers or disposable virtual machines.

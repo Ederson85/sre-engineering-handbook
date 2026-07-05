@@ -21,7 +21,7 @@ Checking filesystem usage should always be part of a server health check.
 Displays filesystem utilization.
 
 ```bash
-df -h
+df -hT
 ```
 
 ---
@@ -33,7 +33,7 @@ df -h
 Displays directory size.
 
 ```bash
-du -sh *
+du -xhd1 . 2>/dev/null | sort -h
 ```
 
 ---
@@ -61,4 +61,4 @@ lsblk
 
 # Next Step
 
-Proceed to the Linux Health Check Lab.
+Proceed to the [Linux Health Check Lab](../labs/lab-01-server-health-check.md).

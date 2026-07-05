@@ -9,7 +9,7 @@
 
 ## Objective
 
-Perform a basic Linux server health check using commands commonly used by SREs during incident investigation.
+Perform a read-only Linux server health check using commands commonly used by SREs during incident investigation.
 
 ---
 
@@ -18,6 +18,8 @@ Perform a basic Linux server health check using commands commonly used by SREs d
 A monitoring alert reports that a Linux server is responding slowly.
 
 Before restarting services or escalating the incident, your goal is to collect evidence about the current state of the server.
+
+This lab must not change system state. Run it on a lab machine, disposable VM, container or non-production server.
 
 ---
 
@@ -35,7 +37,7 @@ uname -a
 uptime
 ```
 Observe
-- System Update
+- System Uptime
 - Load Average
 
 A high Load Average indicates that the system is under load, but it does not necessarily mean the CPU is overloaded.
@@ -51,7 +53,7 @@ Expected
 
 ### 4. Check filesystem usage
 ```bash
-df -h
+df -hT
 lsblk
 ```
 Expected
@@ -74,6 +76,13 @@ Use these commands to confirm whether the bottleneck is CPU, memory or a specifi
 ```bash
 ip addr
 ip route
+ss -tuln
+```
+
+### 7. Check services and recent system logs
+```bash
+systemctl --failed
+journalctl -p warning -n 50 --no-pager
 ```
 
 ## Expected Result
@@ -83,6 +92,14 @@ At the end of this lab, you should be able to answer:
 - Is any filesystem close to full?
 - Are there abnormal processes consuming CPU or memory?
 - Is the network interface available?
+- Are there failed services or recent system warnings?
 
 ## Lessons Learned
 A server health check helps SREs avoid assumptions and collect evidence before taking action during an incident.
+
+## Related Documents
+
+- [Server Health Check Concept](../concepts/server-health.md)
+- [Server Health Check Troubleshooting](../troubleshooting/server-health-check.md)
+- [Server Health Check Runbook](../runbooks/server-health-check.md)
+- [Linux SRE Cheatsheet](../cheatsheets/README.md)

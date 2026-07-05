@@ -49,4 +49,4 @@ Commands used to inspect storage utilization and filesystem health.
 
 ## Next Step
 
-After learning the basic commands, continue with the practical laboratories available in the **Labs** section.
+After learning the basic commands, continue with the [Server Health Check Lab](../labs/lab-01-server-health-check.md).

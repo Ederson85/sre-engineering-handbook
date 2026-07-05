@@ -97,4 +97,4 @@ This basic validation reduces operational mistakes and accelerates incident resp
 
 # Next Step
 
-Continue with **Memory Commands**.
+Continue with [Memory Commands](memory.md).

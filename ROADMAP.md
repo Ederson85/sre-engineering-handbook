@@ -11,14 +11,16 @@ This roadmap defines the planned evolution of the SRE Engineering Handbook.
 - [x] Define repository identity
 - [x] Rename project to SRE Engineering Handbook
 - [x] Organize handbook structure
-- [ ] Define module templates
+- [x] Define initial documentation standards index
+- [ ] Complete module templates
 
 ---
 
 ## Phase 2 — Core SRE Foundations
 
 - [ ] Foundations
-- [ ] Linux for SRE
+- [x] Linux for SRE foundation
+- [ ] Linux advanced incident runbooks
 - [ ] Networking for SRE
 - [ ] Docker fundamentals
 - [ ] Kubernetes fundamentals

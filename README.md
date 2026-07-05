@@ -23,7 +23,7 @@ The first module under development is:
 Available content:
 
 - Linux fundamentals for SRE
-- Server health check lab
+- Server health check concept, lab, troubleshooting guide and runbook
 - Linux command reference structure
 - Linux cheatsheet
 - Production investigation mindset
@@ -35,8 +35,9 @@ Available content:
 - [x] Repository foundation
 - [x] Documentation architecture
 - [x] Linux module foundation
-- [ ] Linux Health Check Lab
-- [ ] Linux Troubleshooting Guide
+- [x] Linux Health Check Lab
+- [x] Linux Troubleshooting Guide
+- [x] Linux Server Health Check Runbook
 - [ ] High CPU Runbook
 - [ ] Networking for SRE
 - [ ] Docker for SRE
@@ -75,6 +76,21 @@ sre-engineering-handbook/
 ```
 
 🚧 Under development
+
+---
+
+## Documentation Standards
+
+This handbook is organized around a few repeatable content types:
+
+- **Concepts:** explain how SREs think about a topic.
+- **References:** provide command syntax and practical interpretation.
+- **Labs:** guide hands-on practice in a safe environment.
+- **Troubleshooting guides:** support structured investigation during incidents.
+- **Runbooks:** define validated operational procedures, mitigation and escalation.
+- **Real-world cases:** document lessons learned from production-like scenarios.
+
+See [standards](standards/README.md) for the repository documentation patterns.
 
 ---
 
