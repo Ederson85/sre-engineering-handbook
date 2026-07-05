@@ -17,7 +17,8 @@ linux/
 ├── real-world/
 ├── cheatsheets/
 ├── diagrams/
-└── images/
+├── images/
+└── runbooks/
 ```
 
 ---
@@ -33,6 +34,7 @@ linux/
 - [07 - Troubleshooting](concepts/07-troubleshooting.md)
 - [Reference](reference/README.md)
 - [Cheatsheet](cheatsheets/README.md)
+- [Server Health Check Runbook](runbooks/server-health-check.md)
 
 ---
 
