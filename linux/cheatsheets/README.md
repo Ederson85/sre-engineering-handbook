@@ -1,29 +1,93 @@
 # Linux SRE Cheatsheet
 
-## Quick Health Check
+Quick command reference for Linux server health checks and incident investigation.
+
+---
+
+## Server Identification
+
+```bash
+hostname
+whoami
+uname -a
+```
+
+---
+
+## System Health
 
 ```bash
 uptime
-df -h
+top
+vmstat 1 5
+```
+
+---
+
+## Memory
+
+```bash
 free -m
+ps aux --sort=-%mem | head
+```
+
+---
+
+## CPU
+
+```bash
 top
 ps aux --sort=-%cpu | head
-ps aux --sort=-%mem | head
+```
 
-## Disk Investigation
+---
+
+## Filesystem
+
+```bash
 df -h
 du -sh *
+lsblk
+```
 
-## Process Investigation
-ps aux
-top
+---
 
-## Network Investigation
+## Network
+
+```bash
 ip addr
 ip route
 ss -tulnp
+ping <host>
+curl http://<host>
+```
+
+---
 
 ## Logs
+
+```bash
 journalctl -xe
 dmesg
 tail -f /var/log/syslog
+```
+
+---
+
+## Quick Investigation Flow
+
+```text
+hostname
+↓
+uptime
+↓
+free -m
+↓
+df -h
+↓
+top
+↓
+ps aux
+↓
+journalctl
+```
