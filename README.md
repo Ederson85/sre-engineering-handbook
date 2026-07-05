@@ -60,7 +60,8 @@ sre-engineering-handbook/
 │   ├── real-world/
 │   ├── best-practices/
 │   ├── common-mistakes/
-│   └── cheatsheets/
+│   ├── cheatsheets/
+│   └── runbooks/
 ├── networking/
 ├── docker/
 ├── kubernetes/

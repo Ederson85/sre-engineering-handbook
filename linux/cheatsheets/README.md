@@ -83,7 +83,7 @@ uptime
 ↓
 free -m
 ↓
-df -h
+df -hT
 ↓
 top
 ↓
