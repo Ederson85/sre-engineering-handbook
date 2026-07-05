@@ -35,7 +35,9 @@ uname -a
 uptime
 ```
 Observe
+- System Update
 - Load Average
+A high Load Average indicates that the system is under load, but it does not necessarily mean the CPU is overloaded.
 
 ### 3. Check memory
 ```bash
@@ -61,8 +63,10 @@ ps aux --sort=-%cpu | head
 ps aux --sort=-%mem | head
 ```
 Observe
-- A consistently high load average may indicate CPU contention.
-- Use `top` or `ps` to determine whether the bottleneck is CPU, memory or running processes.
+- CPU utilization
+- Memory utilization
+- Running processes consuming the most resources
+Use these commands to confirm whether the bottleneck is CPU, memory or a specific process.
 
 ### 6. Check network basics
 ```bash
