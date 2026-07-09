@@ -1,22 +1,21 @@
 # Linux Best Practices
 
-Practical operating principles for Linux systems in SRE and production environments.
+Recommended operational practices for Linux in production.
 
 ---
 
-## Current Best Practices
+## Available Documents
 
-- Confirm server identity before operational actions.
-- Prefer read-only commands during diagnosis.
-- Capture service status and logs before restarting.
-- Use graceful mitigation before forceful termination.
-- Validate recovery with system metrics and application behavior.
-- Document actions, timestamps and evidence during incidents.
+- Linux Best Practices
 
 ---
 
-## Related Documents
+Topics include
 
-- [Linux Troubleshooting Mindset](../concepts/07-troubleshooting.md)
-- [Server Health Check Runbook](../runbooks/server-health-check.md)
-- [Connected to the Wrong Server](../real-world/connected-to-wrong-server.md)
+- Safe investigation
+- Incident management
+- Evidence collection
+- Validation
+- Operational excellence
+
+Reliable systems are built through disciplined operational practices.

@@ -1,15 +1,22 @@
-# Linux Real-World Cases
+# Linux Real World Cases
 
-Short production-like cases that capture operational lessons and SRE judgment.
+Production-inspired incident reports.
 
 ---
 
 ## Available Cases
 
-- [Connected to the Wrong Server](connected-to-wrong-server.md)
+- Connected to Wrong Server
+- High CPU After Deployment
 
 ---
 
-## Purpose
+Real World Cases document:
 
-Real-world cases show how small validation steps can prevent larger incidents.
+- Incident
+- Investigation
+- Root Cause
+- Resolution
+- Lessons Learned
+
+The goal is to teach engineering judgment, not only commands.

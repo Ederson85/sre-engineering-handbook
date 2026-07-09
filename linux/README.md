@@ -1,60 +1,86 @@
 # Linux for SRE
 
-Linux is one of the core foundations for Site Reliability Engineering.
+Linux is the foundation of modern Site Reliability Engineering.
 
-This module focuses on practical Linux knowledge used in real production environments, including system analysis, troubleshooting, processes, logs, networking and service management.
-
+This module teaches Linux from an operational perspective, focusing on production environments.
 
 ---
 
-## Structure
+# 📂 Module Structure
 
-```text
-linux/
-├── concepts/
-├── reference/
-├── labs/
-├── troubleshooting/
-├── real-world/
-├── best-practices/
-├── common-mistakes/
-├── cheatsheets/
-├── diagrams/
-├── images/
-└── runbooks/
+```
+Concepts
+Reference
+Cheatsheets
+Labs
+Troubleshooting
+Runbooks
+Real World
+Best Practices
+Common Mistakes
 ```
 
 ---
 
-## Contents
+# 📚 Concepts
 
-- [01 - Linux for SRE](concepts/01-linux-for-sre.md)
-- [02 - Filesystem](concepts/02-filesystem.md)
-- [03 - Processes](concepts/03-processes.md)
-- [04 - Networking](concepts/04-networking.md)
-- [05 - Logs](concepts/05-logs.md)
-- [06 - Systemd](concepts/06-systemd.md)
-- [07 - Troubleshooting](concepts/07-troubleshooting.md)
-- [Server Health Check Concept](concepts/server-health.md)
-- [Reference](reference/README.md)
-- [Cheatsheet](cheatsheets/README.md)
-- [Server Health Check Troubleshooting](troubleshooting/server-health-check.md)
-- [Server Health Check Runbook](runbooks/server-health-check.md)
+- Linux for SRE
+- Filesystem
+- Processes
+- Networking
+- Logs
+- systemd
+- Troubleshooting Mindset
+- Server Health Check
+- High CPU
 
 ---
 
-## Labs
+# 🧪 Labs
 
-- [Lab 01 - Server Health Check](labs/lab-01-server-health-check.md)
+- Lab 01 — Server Health Check
+- Lab 02 — High CPU Investigation
 
 ---
 
-## Status
+# 🔍 Troubleshooting
 
-The Linux foundation sprint is usable for review and practice.
+- Server Health Check
+- High CPU
 
-Next improvements:
+---
 
-- Add advanced runbooks for high CPU, memory pressure and filesystem exhaustion.
-- Expand references with process, network, log and systemd commands.
-- Add safer lab environments using containers or disposable virtual machines.
+# 📋 Runbooks
+
+- Server Health Check
+- High CPU
+
+---
+
+# 📄 Real World Cases
+
+- Connected to Wrong Server
+- High CPU After Deployment
+
+---
+
+# 📑 Cheatsheets
+
+- Linux Commands
+- High CPU
+
+---
+
+# ⚠ Common Mistakes
+
+- Linux Common Mistakes
+
+---
+
+# ✅ Best Practices
+
+- Linux Best Practices
+
+---
+
+This module is continuously expanded with production-ready scenarios.

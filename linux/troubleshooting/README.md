@@ -1,18 +1,21 @@
 # Linux Troubleshooting
 
-Structured troubleshooting guides for Linux incidents and production investigations.
+Structured investigation guides used during production incidents.
 
 ---
 
 ## Available Guides
 
-- [Server Health Check Troubleshooting](server-health-check.md)
+- Server Health Check
+- High CPU
 
 ---
 
-## Investigation Principles
+Investigation philosophy
 
-- Confirm the target server and environment first.
-- Collect evidence before mitigation.
-- Validate CPU, memory, filesystem, services, network and logs.
-- Escalate when ownership, business impact or safe mitigation is unclear.
+1. Confirm the environment.
+2. Collect evidence.
+3. Identify the root cause.
+4. Mitigate safely.
+5. Validate recovery.
+6. Document lessons learned.
