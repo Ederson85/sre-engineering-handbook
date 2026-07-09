@@ -6,7 +6,7 @@ Common operational mistakes observed during production troubleshooting.
 
 ## Available Documents
 
-- Linux Common Mistakes
+- [Linux Common Mistakes](/linux/common-mistakes/linux-common-mistakes.md)
 
 ---
 

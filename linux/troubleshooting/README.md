@@ -6,8 +6,8 @@ Structured investigation guides used during production incidents.
 
 ## Available Guides
 
-- Server Health Check
-- High CPU
+- [Server Health Check](/linux/troubleshooting/server-health-check.md)
+- [High CPU](/linux/troubleshooting/high-cpu.md)
 
 ---
 
