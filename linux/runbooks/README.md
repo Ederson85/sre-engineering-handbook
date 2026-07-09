@@ -1,27 +1,25 @@
 # Linux Runbooks
 
-Operational procedures for diagnosing, mitigating and validating Linux incidents.
-
-Runbooks should be used during production support with proper incident, change or escalation context.
+Production-ready operational procedures.
 
 ---
 
 ## Available Runbooks
 
-- [Server Health Check Runbook](server-health-check.md)
+- Server Health Check
+- High CPU
 
 ---
 
-## Runbook Expectations
+Each runbook contains
 
-Each runbook should include:
+- Symptoms
+- Investigation
+- Diagnosis
+- Mitigation
+- Validation
+- Rollback
+- Escalation
+- Lessons Learned
 
-- Alert or symptom.
-- Impact.
-- Prerequisites and safety checks.
-- Diagnosis.
-- Mitigation.
-- Validation.
-- Rollback.
-- Escalation.
-- Post-incident actions.
+Runbooks are intended to support incident response in production environments.

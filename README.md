@@ -2,101 +2,135 @@
 
 A practical handbook for **Site Reliability Engineering**, **Platform Engineering**, **Cloud**, **Automation** and **Observability**.
 
-This project is being built as a public knowledge base focused on real-world SRE practices, troubleshooting, runbooks and production-oriented engineering content.
+This repository is being built as a public knowledge base focused on production-ready engineering, incident response, troubleshooting, runbooks and operational excellence.
 
 ---
 
-## Purpose
+# 📖 Purpose
 
-The goal of this handbook is not only to document commands or tools.
+The purpose of this handbook is not only to document Linux commands or cloud services.
 
-The goal is to explain how an SRE thinks during incidents, how to investigate production issues, how to design reliable platforms and how to improve operational excellence.
+It is designed to teach **how experienced SREs investigate, troubleshoot and operate production environments**.
 
----
+Each topic combines:
 
-## Current Focus
-
-The first module under development is:
-
-### ✅ Linux for SRE
-
-Available content:
-
-- Linux fundamentals for SRE
-- Server health check concept, lab, troubleshooting guide and runbook
-- Linux command reference structure
-- Linux cheatsheet
-- Production investigation mindset
+- Concepts
+- References
+- Cheatsheets
+- Labs
+- Troubleshooting Guides
+- Runbooks
+- Real-World Cases
+- Best Practices
+- Common Mistakes
 
 ---
 
-## Learning Journey
+# 🚀 Current Progress
 
-- [x] Repository foundation
-- [x] Documentation architecture
-- [x] Linux module foundation
-- [x] Linux Health Check Lab
-- [x] Linux Troubleshooting Guide
-- [x] Linux Server Health Check Runbook
-- [ ] High CPU Runbook
-- [ ] Networking for SRE
-- [ ] Docker for SRE
-- [ ] Kubernetes for SRE
-- [ ] Observability
-- [ ] Incident Management
-- [ ] Runbooks
+## ✅ Linux Module
+
+Completed
+
+- Linux Fundamentals
+- Filesystem
+- Processes
+- Networking
+- Logs
+- systemd
+- Troubleshooting Mindset
+- Server Health Check
+- High CPU Investigation
+- Linux Reference Commands
+- Linux Cheatsheets
+- Production Runbooks
+- Real-World Cases
 
 ---
 
-## Repository Structure
+# 🗺 Roadmap
+
+Current module
+
+✅ Linux
+
+Upcoming modules
+
+- Docker
+- Kubernetes
+- Networking
+- Observability
+- Cloud
+- Terraform
+- Ansible
+- API Management
+- Incident Management
+- Platform Engineering
+
+---
+
+# 📂 Repository Structure
 
 ```text
 sre-engineering-handbook/
-├── linux/
-│   ├── concepts/
-│   ├── reference/
-│   ├── labs/
-│   ├── troubleshooting/
-│   ├── real-world/
-│   ├── best-practices/
-│   ├── common-mistakes/
-│   ├── cheatsheets/
-│   └── runbooks/
-├── networking/
-├── docker/
-├── kubernetes/
-├── cloud/
-├── observability/
-├── terraform/
-├── ansible/
-├── api-management/
-├── incident-management/
-├── runbooks/
-├── platform-engineering/
-└── architecture/
+
+linux/
+docker/
+kubernetes/
+networking/
+cloud/
+observability/
+terraform/
+ansible/
+api-management/
+incident-management/
+platform-engineering/
+architecture/
+standards/
 ```
 
-🚧 Under development
+---
+
+# 📚 Documentation Pattern
+
+Each incident is documented using the same engineering workflow.
+
+```
+Concept
+        ↓
+Reference
+        ↓
+Cheatsheet
+        ↓
+Lab
+        ↓
+Troubleshooting
+        ↓
+Runbook
+        ↓
+Real World Case
+        ↓
+Best Practices
+        ↓
+Common Mistakes
+```
 
 ---
 
-## Documentation Standards
+# 🎯 Goal
 
-This handbook is organized around a few repeatable content types:
+Build one of the largest open SRE knowledge bases available on GitHub.
 
-- **Concepts:** explain how SREs think about a topic.
-- **References:** provide command syntax and practical interpretation.
-- **Labs:** guide hands-on practice in a safe environment.
-- **Troubleshooting guides:** support structured investigation during incidents.
-- **Runbooks:** define validated operational procedures, mitigation and escalation.
-- **Real-world cases:** document lessons learned from production-like scenarios.
-
-See [standards](standards/README.md) for the repository documentation patterns.
+Every document is written from an engineering perspective inspired by real production environments.
 
 ---
 
-Created and maintained by Ederson do Nascimento.
+Created and maintained by **Ederson do Nascimento**
 
-GitHub: [Ederson do Nascimento](https://github.com/Ederson85)
+GitHub
 
-LinkedIn: [Ederson do Nascimento](https://www.linkedin.com/in/edersondonascimento/)
+https://github.com/Ederson85
+
+LinkedIn
+
+https://linkedin.com/in/edersondonascimento

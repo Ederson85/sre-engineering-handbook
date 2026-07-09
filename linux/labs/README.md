@@ -1,20 +1,21 @@
 # Linux Labs
 
-Hands-on exercises for practicing Linux investigation skills in a safe environment.
-
-Labs should be executed on a disposable VM, container, local lab machine or non-production server.
+Hands-on exercises for practicing Linux operations in safe environments.
 
 ---
 
 ## Available Labs
 
-- [Lab 01 - Server Health Check](lab-01-server-health-check.md)
+- Lab 01 — Server Health Check
+- Lab 02 — High CPU Investigation
 
 ---
 
-## Safety Rules
+## Recommendations
 
-- Do not run labs directly on production servers.
-- Prefer read-only commands during investigation.
-- Capture observations before taking action.
-- Treat mitigation commands as runbook procedures, not lab defaults.
+- Use disposable virtual machines.
+- Prefer containers or lab environments.
+- Never execute mitigation commands directly in production.
+- Collect evidence before taking action.
+
+Labs simulate real production incidents experienced by Site Reliability Engineers.
