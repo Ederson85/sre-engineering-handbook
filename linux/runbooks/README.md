@@ -6,8 +6,8 @@ Production-ready operational procedures.
 
 ## Available Runbooks
 
-- Server Health Check
-- High CPU
+- [Server Health Check](/linux/runbooks/server-health-check.md)
+- [High CPU](/linux/runbooks/high-cpu.md)
 
 ---
 
