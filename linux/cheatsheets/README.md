@@ -6,8 +6,7 @@ Quick references used during investigations.
 
 ## Available Cheatsheets
 
-- Linux Commands
-- High CPU
+- [High CPU](/linux/cheatsheets/high-cpu.md)
 
 ---
 
