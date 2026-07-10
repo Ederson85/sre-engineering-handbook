@@ -6,8 +6,9 @@ Production-inspired incident reports.
 
 ## Available Cases
 
-- [Connected to Wrong Server](/linux/real-world/connected-to-wrong-server.md)
-- [High CPU After Deployment](/linux/real-world/high-cpu-after-deploy.md)
+- [Connected to Wrong Server](connected-to-wrong-server.md)
+- [High CPU After Deployment](high-cpu-after-deploy.md)
+- [Memory Pressure Investigation](memory-leak-after-release.md)
 
 ---
 
