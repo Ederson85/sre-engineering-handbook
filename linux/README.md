@@ -34,6 +34,7 @@ Common Mistakes
 - [07 - Troubleshooting](concepts/07-troubleshooting.md)
 - [Server Health Check](concepts/server-health.md)
 - [High CPU](concepts/high-cpu.md)
+- [Memory Pressure](concepts/memory-pressure.md)
 
 ---
 
@@ -41,6 +42,7 @@ Common Mistakes
 
 - [Lab 01 — Server Health Check](labs/lab-01-server-health-check.md)
 - [Lab 02 — High CPU Investigation](labs/lab-02-high-cpu-investigation.md)
+- [Lab 03 — Memory Pressure Investigation](labs/lab-03-memory-pressure-investigation.md)
 
 ---
 
@@ -48,6 +50,7 @@ Common Mistakes
 
 - [Server Health Check](troubleshooting/server-health-check.md)
 - [High CPU](troubleshooting/high-cpu.md)
+- [Memory Pressure](troubleshooting/memory-pressure.md)
 
 ---
 
@@ -55,6 +58,7 @@ Common Mistakes
 
 - [Server Health Check](runbooks/server-health-check.md)
 - [High CPU](runbooks/high-cpu.md)
+- [Memory Pressure](runbooks/memory-pressure.md)
 
 ---
 
@@ -62,12 +66,14 @@ Common Mistakes
 
 - [Connected to Wrong Server](real-world/connected-to-wrong-server.md)
 - [High CPU After Deployment](real-world/high-cpu-after-deploy.md)
+- [Memory Leak After Release](real-world/memory-leak-after-release.md)
 
 ---
 
 # 📑 Cheatsheets
 
 - [High CPU](cheatsheets/high-cpu.md)
+- [Memory Pressure](cheatsheets/memory-pressure.md)
 
 ---
 

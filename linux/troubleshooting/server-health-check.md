@@ -59,7 +59,7 @@ Look for:
 
 ```bash
 free -m
-vmstat 1 5
+vmstat 1 5 5
 ps aux --sort=-%mem | head
 ```
 

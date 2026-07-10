@@ -33,7 +33,7 @@ free -m
 Displays virtual memory statistics.
 
 ```bash
-vmstat 1 5
+vmstat 1 5 5
 ```
 
 ---
