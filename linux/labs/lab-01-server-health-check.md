@@ -45,7 +45,7 @@ A high Load Average indicates that the system is under load, but it does not nec
 ### 3. Check memory
 ```bash
 free -m
-vmstat 1 5
+vmstat 1 5 5
 ```
 Expected
 - Available memory should not be critically low.

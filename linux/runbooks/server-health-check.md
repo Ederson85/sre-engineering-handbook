@@ -84,7 +84,7 @@ Identify processes consuming abnormal CPU.
 
 ```bash
 free -m
-vmstat 1 5
+vmstat 1 5 5
 ps aux --sort=-%mem | head
 ```
 
@@ -189,7 +189,7 @@ ps aux --sort=-%cpu | head
 
 ```bash
 free -m
-vmstat 1 5
+vmstat 1 5 5
 ps aux --sort=-%mem | head
 ```
 
@@ -216,7 +216,7 @@ systemctl restart <service-name>
 
 ```bash
 free -m
-vmstat 1 5
+vmstat 1 5 5
 ```
 
 ---

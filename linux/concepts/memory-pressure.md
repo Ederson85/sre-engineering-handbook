@@ -95,7 +95,7 @@ OOM events should always be investigated.
 ```bash
 free -h
 
-vmstat 1
+vmstat 1 5
 
 top
 

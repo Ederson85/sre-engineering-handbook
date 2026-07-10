@@ -59,7 +59,7 @@ Important fields:
 # Monitor Memory Activity
 
 ```bash
-vmstat 1
+vmstat 1 5
 ```
 
 Pay attention to:
@@ -96,7 +96,7 @@ journalctl -u <service-name> -n 100 --no-pager
 ```bash
 free -h
 
-vmstat 1
+vmstat 1 5
 
 top
 ```

@@ -144,7 +144,7 @@ If OOM Killer has terminated a process, identify:
 # Step 6 — Evaluate Swap Activity
 
 ```bash
-vmstat 1
+vmstat 1 5
 ```
 
 Pay attention to:
@@ -175,7 +175,7 @@ After mitigation, confirm:
 ```bash
 free -h
 
-vmstat 1
+vmstat 1 5
 
 top
 ```

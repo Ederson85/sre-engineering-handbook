@@ -126,7 +126,7 @@ The following commands confirmed service recovery:
 ```bash
 free -h
 
-vmstat 1
+vmstat 1 5 5
 
 top
 

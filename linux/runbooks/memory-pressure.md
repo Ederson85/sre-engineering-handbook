@@ -12,10 +12,11 @@ Memory utilization remains above the defined threshold for more than 5 minutes.
 
 Monitoring may also report:
 
-- Low available memory
-- Swap usage
-- OOM Killer events
-- Increased application latency
+- Low `MemAvailable`
+- Sustained swap-in or swap-out activity
+- Memory PSI pressure
+- OOM or allocation failure events
+- Application degradation correlated with memory pressure
 
 ---
 
@@ -27,6 +28,20 @@ Monitoring may also report:
 - Application instability
 - Process termination by OOM Killer
 - Service degradation
+
+---
+
+# Prerequisites
+
+Before applying mitigation:
+
+- Confirm the correct host and environment.
+- Confirm the affected service and business impact.
+- Check whether the service has redundancy.
+- Identify the process owner.
+- Verify whether a deployment or change is in progress.
+- Follow the incident and change management process.
+- Capture evidence before restarting or scaling the service.
 
 ---
 
@@ -153,7 +168,7 @@ Confirm recovery using:
 ```bash
 free -h
 
-vmstat 1
+vmstat 1 5 5
 
 top
 ```
