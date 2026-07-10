@@ -6,8 +6,9 @@ Hands-on exercises for practicing Linux operations in safe environments.
 
 ## Available Labs
 
-- [Lab 01 — Server Health Check](/linux/labs/lab-01-server-health-check.md)
-- [Lab 02 — High CPU Investigation](/linux/labs/lab-02-high-cpu-investigation.md)
+- [Lab 01 — Server Health Check](lab-01-server-health-check.md)
+- [Lab 02 — High CPU Investigation](lab-02-high-cpu-investigation.md)
+- [Memory Pressure Investigation](lab-03-memory-pressure-investigation.md)
 
 ---
 

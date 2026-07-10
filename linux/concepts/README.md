@@ -14,6 +14,8 @@ Conceptual foundation for Linux troubleshooting and production operations from a
 - [06 - Systemd](06-systemd.md)
 - [07 - Troubleshooting](07-troubleshooting.md)
 - [Server Health Check](server-health.md)
+- [High CPU](high-cpu.md)
+- [Memory Pressure Investigation](memory-pressure.md)
 
 ---
 

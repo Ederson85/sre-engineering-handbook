@@ -6,7 +6,8 @@ Quick references used during investigations.
 
 ## Available Cheatsheets
 
-- [High CPU](/linux/cheatsheets/high-cpu.md)
+- [High CPU](high-cpu.md)
+- [Memory Pressure Investigation](memory-pressure.md)
 
 ---
 

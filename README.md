@@ -41,6 +41,7 @@ Completed
 - Troubleshooting Mindset
 - Server Health Check
 - High CPU Investigation
+- Memory Pressure Investigation
 - Linux Reference Commands
 - Linux Cheatsheets
 - Production Runbooks
