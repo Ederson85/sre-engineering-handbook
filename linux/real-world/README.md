@@ -8,7 +8,8 @@ Production-inspired incident reports.
 
 - [Connected to Wrong Server](connected-to-wrong-server.md)
 - [High CPU After Deployment](high-cpu-after-deploy.md)
-- [Memory Pressure Investigation](memory-leak-after-release.md)
+- [Memory Leak After Release](real-world/memory-leak-after-release.md)
+- [Disk Full After Log Growth](real-world/disk-full-after-log-growth.md)
 
 ---
 

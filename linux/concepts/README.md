@@ -16,6 +16,7 @@ Conceptual foundation for Linux troubleshooting and production operations from a
 - [Server Health Check](server-health.md)
 - [High CPU](high-cpu.md)
 - [Memory Pressure Investigation](memory-pressure.md)
+- [Filesystem Full](filesystem-full.md)
 
 ---
 
