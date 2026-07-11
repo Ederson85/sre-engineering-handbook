@@ -35,6 +35,7 @@ Common Mistakes
 - [Server Health Check](concepts/server-health.md)
 - [High CPU](concepts/high-cpu.md)
 - [Memory Pressure](concepts/memory-pressure.md)
+- [Filesystem Full](concepts/filesystem-full.md)
 
 ---
 
@@ -43,6 +44,7 @@ Common Mistakes
 - [Lab 01 — Server Health Check](labs/lab-01-server-health-check.md)
 - [Lab 02 — High CPU Investigation](labs/lab-02-high-cpu-investigation.md)
 - [Lab 03 — Memory Pressure Investigation](labs/lab-03-memory-pressure-investigation.md)
+- [Lab-04 — Filesystem Full](labs/lab-04-filesystem-full.md)
 
 ---
 
@@ -51,6 +53,7 @@ Common Mistakes
 - [Server Health Check](troubleshooting/server-health-check.md)
 - [High CPU](troubleshooting/high-cpu.md)
 - [Memory Pressure](troubleshooting/memory-pressure.md)
+- [Filesystem Full](troubleshooting/filesystem-full.md)
 
 ---
 
@@ -59,6 +62,7 @@ Common Mistakes
 - [Server Health Check](runbooks/server-health-check.md)
 - [High CPU](runbooks/high-cpu.md)
 - [Memory Pressure](runbooks/memory-pressure.md)
+- [Filesystem Full](runbooks/filesystem-full.md)
 
 ---
 
@@ -67,6 +71,7 @@ Common Mistakes
 - [Connected to Wrong Server](real-world/connected-to-wrong-server.md)
 - [High CPU After Deployment](real-world/high-cpu-after-deploy.md)
 - [Memory Leak After Release](real-world/memory-leak-after-release.md)
+- [Disk Full After Log Growth](real-world/disk-full-after-log-growth.md)
 
 ---
 
@@ -74,6 +79,7 @@ Common Mistakes
 
 - [High CPU](cheatsheets/high-cpu.md)
 - [Memory Pressure](cheatsheets/memory-pressure.md)
+- [Filesystem Full](cheatsheets/filesystem-full.md)
 
 ---
 
