@@ -6,7 +6,11 @@ Common operational mistakes observed during production troubleshooting.
 
 ## Available Documents
 
-- [Linux Common Mistakes](/linux/common-mistakes/linux-common-mistakes.md)
+<!-- AUTO-INDEX:START -->
+
+- [Linux Common Mistakes](linux-common-mistakes.md)
+
+<!-- AUTO-INDEX:END -->
 
 ---
 
