@@ -6,7 +6,11 @@ Recommended operational practices for Linux in production.
 
 ## Available Documents
 
-- [Linux Best Practices](/linux/best-practices/linux-best-practices.md)
+<!-- AUTO-INDEX:START -->
+
+- [Linux Best Practices](linux-best-practices.md)
+
+<!-- AUTO-INDEX:END -->
 
 ---
 

@@ -6,10 +6,14 @@ Production-ready operational procedures.
 
 ## Available Runbooks
 
-- [Server Health Check](server-health-check.md)
-- [High CPU](high-cpu.md)
-- [Memory Pressure Investigation](memory-pressure.md)
-- [Filesystem Full](filesystem-full.md)
+<!-- AUTO-INDEX:START -->
+
+- [Filesystem Full Runbook](filesystem-full.md)
+- [High CPU Runbook](high-cpu.md)
+- [Memory Pressure Runbook](memory-pressure.md)
+- [Server Health Check Runbook](server-health-check.md)
+
+<!-- AUTO-INDEX:END -->
 
 ---
 

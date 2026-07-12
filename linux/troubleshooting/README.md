@@ -6,10 +6,14 @@ Structured investigation guides used during production incidents.
 
 ## Available Guides
 
-- [Server Health Check](server-health-check.md)
-- [High CPU](high-cpu.md)
-- [Memory Pressure Investigation](memory-pressure.md)
-- [Filesystem Full](filesystem-full.md)
+<!-- AUTO-INDEX:START -->
+
+- [Filesystem Full Troubleshooting](filesystem-full.md)
+- [High CPU Troubleshooting](high-cpu.md)
+- [Memory Pressure Troubleshooting](memory-pressure.md)
+- [Server Health Check Troubleshooting](server-health-check.md)
+
+<!-- AUTO-INDEX:END -->
 
 ---
 
