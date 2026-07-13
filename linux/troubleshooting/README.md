@@ -8,6 +8,7 @@ Structured investigation guides used during production incidents.
 
 <!-- AUTO-INDEX:START -->
 
+- [Disk I/O Bottleneck Troubleshooting](disk-io.md)
 - [Filesystem Full Troubleshooting](filesystem-full.md)
 - [High CPU Troubleshooting](high-cpu.md)
 - [Memory Pressure Troubleshooting](memory-pressure.md)

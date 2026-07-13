@@ -12,6 +12,7 @@ Production-inspired incident reports.
 - [Real World - Disk Full After Log Growth](disk-full-after-log-growth.md)
 - [Real World - High CPU After Deployment](high-cpu-after-deploy.md)
 - [Real World - Memory Leak After Release](memory-leak-after-release.md)
+- [Real World - Storage Latency After Backup](storage-latency-after-backup.md)
 
 <!-- AUTO-INDEX:END -->
 

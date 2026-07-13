@@ -8,6 +8,7 @@ Production-ready operational procedures.
 
 <!-- AUTO-INDEX:START -->
 
+- [Disk I/O Bottleneck Runbook](disk-io.md)
 - [Filesystem Full Runbook](filesystem-full.md)
 - [High CPU Runbook](high-cpu.md)
 - [Memory Pressure Runbook](memory-pressure.md)
