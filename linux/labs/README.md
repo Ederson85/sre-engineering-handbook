@@ -12,6 +12,7 @@ Hands-on exercises for practicing Linux operations in safe environments.
 - [Lab 02 - High CPU Investigation](lab-02-high-cpu-investigation.md)
 - [Lab 03 - Memory Pressure Investigation](lab-03-memory-pressure-investigation.md)
 - [Lab 04 - Filesystem Full Investigation](lab-04-filesystem-full.md)
+- [Lab 05 - Disk I/O Bottleneck Investigation](lab-05-disk-io-investigation.md)
 
 <!-- AUTO-INDEX:END -->
 

@@ -8,6 +8,7 @@ Quick references used during investigations.
 
 <!-- AUTO-INDEX:START -->
 
+- [Disk I/O Bottleneck Cheatsheet](disk-io.md)
 - [Filesystem Full Cheatsheet](filesystem-full.md)
 - [High CPU Cheatsheet](high-cpu.md)
 - [Memory Pressure Cheatsheet](memory-pressure.md)

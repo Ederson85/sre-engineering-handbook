@@ -15,6 +15,7 @@ Conceptual foundation for Linux troubleshooting and production operations from a
 - [05 - Logs](05-logs.md)
 - [06 - Systemd](06-systemd.md)
 - [07 - Troubleshooting](07-troubleshooting.md)
+- [Disk I/O Bottleneck](disk-io.md)
 - [Filesystem Full](filesystem-full.md)
 - [High CPU](high-cpu.md)
 - [Memory Pressure](memory-pressure.md)

@@ -43,6 +43,7 @@ Completed
 - High CPU Investigation
 - Memory Pressure Investigation
 - Filesystem Full
+- Disk I/O Bottleneck
 - Linux Reference Commands
 - Linux Cheatsheets
 - Production Runbooks
