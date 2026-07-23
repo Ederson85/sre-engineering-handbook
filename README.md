@@ -90,7 +90,16 @@ incident-management/
 platform-engineering/
 architecture/
 standards/
+case-studies/
 ```
+
+---
+
+# Engineering Case Studies
+
+In-depth investigations based on real production incidents, covering architecture, observability, root cause analysis, remediation and lessons learned.
+
+- [Case 01 — Cloud Cassandra Storage Latency](case-studies/case-01-cloud-cassandra-storage-latency/README.md)
 
 ---
 

@@ -40,6 +40,18 @@ Check only one module:
 python3 tools/generate_index.py --check --module linux
 ```
 
+Update only the Engineering Case Studies index:
+
+```bash
+python3 tools/generate_index.py --module case-studies --write
+```
+
+Check only the Engineering Case Studies index:
+
+```bash
+python3 tools/generate_index.py --module case-studies --check
+```
+
 ---
 
 More automation utilities will be added over time.

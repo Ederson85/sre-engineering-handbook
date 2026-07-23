@@ -52,6 +52,7 @@ class Target:
 
     readme: Path
     groups: tuple[tuple[str | None, Path], ...]
+    case_studies: bool = False
 
 
 @dataclass
@@ -74,8 +75,8 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     mode.add_argument("--check", action="store_true", help="check without writing")
     parser.add_argument(
         "--module",
-        choices=("linux",),
-        help="limit processing to one module (currently only linux)",
+        choices=("linux", "case-studies"),
+        help="limit processing to one module",
     )
     return parser.parse_args(argv)
 
@@ -99,6 +100,12 @@ def linux_targets(root: Path) -> tuple[Target, ...]:
     return (main, *subsections)
 
 
+def case_studies_targets(root: Path) -> tuple[Target, ...]:
+    """Build the Engineering Case Studies README target."""
+    module = root / "case-studies"
+    return (Target(module / "README.md", ((None, module),), case_studies=True),)
+
+
 def markdown_files(directory: Path) -> list[Path]:
     """Return directly contained Markdown documents, excluding README.md."""
     if not directory.is_dir():
@@ -111,6 +118,27 @@ def markdown_files(directory: Path) -> list[Path]:
         and path.name.lower() != "readme.md"
     ]
     return sorted(files, key=document_sort_key)
+
+
+def case_study_readmes(directory: Path) -> list[Path]:
+    """Return README files from deterministically ordered case-* directories."""
+    if not directory.is_dir():
+        raise IndexError(f"source directory does not exist: {directory}")
+    case_directories = sorted(
+        (
+            path
+            for path in directory.iterdir()
+            if path.is_dir() and path.name.startswith("case-")
+        ),
+        key=lambda path: (path.name.casefold(), path.name),
+    )
+    readmes: list[Path] = []
+    for case_directory in case_directories:
+        readme = case_directory / "README.md"
+        if not readme.is_file():
+            raise IndexError(f"case study README does not exist: {readme}")
+        readmes.append(readme)
+    return readmes
 
 
 def document_sort_key(path: Path) -> tuple[int, int, str]:
@@ -137,6 +165,19 @@ def document_title(path: Path) -> str:
     return words.title() or path.stem
 
 
+def required_document_title(path: Path) -> str:
+    """Extract the first ATX H1, failing when a case study has none."""
+    try:
+        with path.open("r", encoding="utf-8", newline=None) as document:
+            for line in document:
+                match = H1_PATTERN.match(line.rstrip("\r\n"))
+                if match:
+                    return match.group(1).strip().rstrip("#").rstrip()
+    except (OSError, UnicodeError) as exc:
+        raise IndexError(f"cannot read {path}: {exc}") from exc
+    raise IndexError(f"case study README has no H1: {path}")
+
+
 def markdown_link(document: Path, readme: Path) -> str:
     """Create a portable relative Markdown link from a README to a document."""
     relative = os.path.relpath(document, start=readme.parent)
@@ -151,10 +192,15 @@ def generated_body(target: Target) -> str:
         if heading is not None:
             lines.append(f"## {heading}")
             lines.append("")
-        documents = markdown_files(directory)
+        documents = (
+            case_study_readmes(directory)
+            if target.case_studies
+            else markdown_files(directory)
+        )
         if documents:
             lines.extend(
-                f"- [{document_title(path)}]({markdown_link(path, target.readme)})"
+                f"- [{required_document_title(path) if target.case_studies else document_title(path)}]"
+                f"({markdown_link(path, target.readme)})"
                 for path in documents
             )
         else:
@@ -259,6 +305,7 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     module_factories = {
         "linux": linux_targets,
+        "case-studies": case_studies_targets,
     }
 
     selected_modules = (
